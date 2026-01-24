@@ -1,4 +1,4 @@
-## Telnet Initial Access Validation
+## Telnet Initial Access
 Initial access validation was performed to determine whether the exposed Telnet service presents a realistic authentication attack surface. Actions were intentionally limited to avoid unauthorized access beyond validating exposure.
 
 ### Telnet Exposure Assessment
@@ -23,3 +23,21 @@ This issue exists due to the use of an insecure legacy protocol combined with de
 - Enforce strong, unique credentials
 - Restrict remote management services using network controls
 - Monitor authentication attempts on remote access services
+
+## FTP Initial Access
+This section demonstrates how an attacker could gain initial access or sensitive information through an exposed FTP service due to insecure configuration. The demonstration is limited to validating access and does not involve exploitation beyond authentication.
+
+### Result
+The FTP service permitted anonymous authentication, allowing unauthenticated users to access the file system. This confirms that the service presents a viable initial access vector without the need for valid credentials.
+
+### Impact Assessment
+Anonymous FTP access may allow attackers to retrieve sensitive files, upload malicious content, or gather information useful for further compromise. Even read-only access can significantly aid reconnaissance and follow-on attacks.
+
+### Why This Worked
+This issue exists due to anonymous FTP being enabled on an externally accessible service. Such configurations are commonly abused and are generally unnecessary on modern systems.
+
+### Recommended Remediation
+- Disable anonymous FTP access
+- Restrict FTP access to authenticated users only
+- Replace FTP with secure alternatives such as SFTP
+- Monitor and log file access activity

@@ -32,3 +32,20 @@ Web services are high-value targets because they are externally accessible and f
 Telnet provides remote command-line access without encryption and is considered insecure by modern standards. These are high-value targets due to frequent association with weak authentication practices and legacy system configurations.
 
 Based on the analysis, FTP and Telnet were identified as the most likely candidates for initial access due to their exposure and historical abuse. Further reconnaissance will focus on validating whether these services present exploitable conditions.
+
+## Targeted Version Identification
+Version identification was performed selectively against high-priority services identified during attack surface analysis. Scanning was intentionally limited to reduce noise and focus on services most likely to lead to initial access.
+
+### Telnet Version Identification
+Service version detection indicated that the Telnet service is running on the target system. Legacy Telnet services are commonly associated with weak authentication practices and outdated system configurations.
+
+### FTP Version Identification
+The FTP service was identified along with its running version. FTP services are frequently targeted due to historical vulnerabilities and configuration weaknesses such as anonymous access.
+
+### Summary
+| Port | Service | Version Identified | Risk Content |
+|----|---------|----------|---------|
+| 21  | FTP     | Identified | Common misconfigurations |
+| 23  | Telnet  | Identified | Legacy remote access |
+
+Based on the identified service versions and their risk profile, Telnet and FTP were assessed as the most likely candidates for initial access. Further actions will focus on validating whether these services present exploitable conditions.

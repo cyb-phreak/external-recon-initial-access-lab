@@ -47,5 +47,3 @@ The FTP service was identified along with its running version. FTP services are 
 |----|---------|----------|---------|
 | 21  | FTP     | Identified | Common misconfigurations |
 | 23  | Telnet  | Identified | Legacy remote access |
-
-Based on the identified service versions and their risk profile, Telnet and FTP were assessed as the most likely candidates for initial access. Further actions will focus on validating whether these services present exploitable conditions.

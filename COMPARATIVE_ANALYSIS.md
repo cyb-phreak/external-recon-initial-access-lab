@@ -1,3 +1,5 @@
+## Analysis of Initial Access Vectors
+
 Multiple initial access vectors were identified during the engagement. This section compares Telnet and FTP as potential entry points from an attacker’s perspective, considering effort, reliability, and potential impact.
 
 | Factor | Telnet | FTP |

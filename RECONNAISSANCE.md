@@ -16,6 +16,13 @@ The target system was identified within the isolated lab network and assigned a 
 
 Note: A full Nmap scan was performed, but results were summarized here to highlight services most relevant to initial access. Raw scan output is omitted for clarity.
 
+### Raw Nmap Output
+The following displays the raw output of the Nmap service discovery scan.
+
+__Note on ERRORS__: the scan reported DNS resolution warnings due to a missing /etc/resolv.conf file, but this did not impact the accuracy of the port discovery.
+
+![Nmap TCP scan](./screenshots/tcp_scan.png)
+
 From an attacker’s perspective, exposed services increase the attack surface and may indicate misconfigurations or outdated software that could enable an initial foothold.
 
 

@@ -9,6 +9,8 @@ Based on this validation, the Telnet service was confirmed to present a realisti
 ## Initial Access Demonstration
 This section demonstrates how an attacker could obtain an initial foothold via an exposed Telnet service using known default credentials in a controlled lab environment. The demonstration is intentionally limited to initial access only.
 
+![Initial access on Telnet](./screenshots/telnet_initial_access.png)
+
 ### Result
 Authentication to the Telnet service was successful using documented default credentials. This confirms that an attacker could gain an initial foothold on the system without exploiting a software vulnerability.
 
@@ -26,6 +28,8 @@ This issue exists due to the use of an insecure legacy protocol combined with de
 
 ## FTP Initial Access
 This section demonstrates how an attacker could gain initial access or sensitive information through an exposed FTP service due to insecure configuration. The demonstration is limited to validating access and does not involve exploitation beyond authentication.
+
+![Initial access on FTP](./screenshots/ftp_initial_access.png)
 
 ### Result
 The FTP service permitted anonymous authentication, allowing unauthenticated users to access the file system. This confirms that the service presents a viable initial access vector without the need for valid credentials.

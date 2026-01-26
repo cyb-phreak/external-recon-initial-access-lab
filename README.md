@@ -1,13 +1,14 @@
 # External Reconnaissance & Initial Access (Foundational Lab)
 
 ## Overview
-This project documents a foundational cybersecurity lab focused on understanding how attackers perform external reconnaissance and achieve initial access. The project is conducted entirely in a controlled virtual lab environment using intentionally vulnerable machines.
-The focus is on understanding attacker methodology, decision making, and identifying defendive controls that could detect or prevent these actions
+This repository documents a foundational cybersecurity lab project focused on understanding how attackers perform external reconnaissance and achieve initial access. The project is conducted entirely in a controlled virtual lab environment using intentionally vulnerable machines.
+
+The goal is to better understand how exposed services and configurations can be discovered and why this matters in defensive security.
 
 ## Objectices
 - Simulate external roconnaissance from an attacker's perspective
 - Identify exposed services and attack surface
-- Demonstrate one realistic initial access vector
+- Demonstrate one realistic initial access technique
 - Analyze security gaps and recommend mitigations
 
 ## Environment

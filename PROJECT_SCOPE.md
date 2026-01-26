@@ -14,6 +14,6 @@
 - Privilege escalation beyond initial access
 
 ## Rules of Engagement
-- All actions must remain within the isolated lab
+- All activity must remain within the isolated, controlled lab environment
 - Only intentionally vulnerable machines may be targeted
-- Activity must be documented and reproducible
+- All actions must be documented and reproducible
